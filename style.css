@@ -1,0 +1,67 @@
+
+body {
+    font-size: 15px;
+}
+
+.boxmodel {
+    margin: 10px 20px 20px 15px;
+    border: 2px solid blue;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    box-sizing: content-box;
+    font-size: 1rem;
+}
+
+p {
+    text-align: justify;
+}
+
+p {
+    color: red;
+}
+
+/*selector hijo*/
+ul > li > span {
+    color: blue;
+}
+div > span{
+    color: violet;
+    
+}
+
+/*selector adyacente*/
+h3 + p {
+    text-align: justify;
+    color: brown;
+}
+/*selector hermano*/
+h2 ~ p {
+    color: green;
+}
+
+h3 > span {
+    color: blue;
+}
+
+/*selector de atributo*/
+a[class="link"] {  /*igual*/
+    color: rgb(114, 60, 60);
+}
+a[class*="link"] {  /*contiene*/
+    color: rgb(114, 60, 60);
+}
+a[class$="link"] {  /*finalice*/
+    color: rgb(223, 39, 110);
+}
+a[class^="link"] {  /*comience*/
+    color: rgb(114, 60, 60);
+}
+a[class~="link"] {  /*contenga la clase*/
+    color: rgb(36, 211, 66);
+}
+a[class~="link"]:hover {  /*contenga la clase*/
+    color: rgb(211, 77, 36);
+}
+/*propiedades especiales*/
+
